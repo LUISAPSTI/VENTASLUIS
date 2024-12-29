@@ -1,0 +1,126 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a la Mejor Tienda de Computadoras y laptops en la ciudad de Puno </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/originals/de/34/12/de3412e3c5d2ed0b11ec8291a28a3db5.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .logo {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo img {
+            max-width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            text-align: center;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row; /* Alineación horizontal */
+            gap: 20px; /* Espacio entre botones */
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilos de colores para cada botón */
+        .button-cliente {
+            background-color: #ff5733;
+        }
+
+        .button-cliente:hover {
+            background-color: #e04e2d;
+        }
+
+        .button-admin {
+            background-color: #3498db;
+        }
+
+        .button-admin:hover {
+            background-color: #2980b9;
+        }
+
+        .button-empresa {
+            background-color: #2ecc71;
+        }
+
+        .button-empresa:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a la Mejor Tienda de Computadoras y laptops en la ciudad de Puno</h1>
+</header>
+
+<div class="logo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzN5455TqncNuAsArqTv-q0YpRCrkjyR68bA&s" alt="Logo de la Tienda">
+</div>
+
+<div class="container">
+    <div class="buttons">
+        <!-- Botón Login Cliente -->
+        <a href="cliente_login.php" class="button button-cliente">Login Cliente</a>
+
+        <!-- Botón Login Administrador -->
+        <a href="admin_login.php" class="button button-admin">Login Administrador</a>
+
+        <!-- Botón Empresa -->
+        <a href="empresa.php" class="button button-empresa">Empresa</a>
+    </div>
+</div>
+
+</body>
+</html>
